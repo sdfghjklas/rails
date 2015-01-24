@@ -10,27 +10,6 @@ gem 'rake', '>= 10.3'
 # ensure correct loading order
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.3'
-gem 'jquery-rails', github: 'rails/jquery-rails', branch: 'master'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'turbolinks'
-gem 'arel', github: 'rails/arel', branch: 'master'
-
-# require: false so bcrypt is loaded only when has_secure_password is used.
-# This is to avoid ActiveModel (and by extension the entire framework)
-# being dependent on a binary library.
-gem 'bcrypt', '~> 3.1.7', require: false
-
-# This needs to be with require false to avoid
-# it being automatically loaded by sprockets
-gem 'uglifier', '>= 1.3.0', require: false
-
-group :doc do
-  gem 'sdoc', '~> 0.4.0'
-  gem 'redcarpet', '~> 3.2.2', platforms: :ruby
-  gem 'w3c_validators'
-  gem 'kindlerb'
-end
 
 # AS
 gem 'dalli', '>= 2.2.1'
